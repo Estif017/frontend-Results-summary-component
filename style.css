@@ -1,0 +1,159 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: HankGrotesk;
+  src: url('./assets/fonts/HankenGrotesk-VariableFont_wght.ttf');
+}
+
+body{
+  font-family: HankGrotesk;
+}
+
+p{
+  font-size: 18px;
+}
+
+h3, p{
+  color: hsl(241, 100%, 89%);
+}
+
+.container{
+  width: 75%;
+  margin: 0 auto;
+  border: 2px solid white;
+  border-radius: 15px;
+}
+
+.score{
+  background-color: hsl(252, 100%, 67%);
+  color: hsl(0, 0%, 100%);
+  padding: 20px 0;
+  text-align: center;
+  border-radius: 0 0 15px 15px;
+  margin-bottom: 20px;
+}
+
+.score .result{
+  border: 1px solid hsla(256, 72%, 46%, 0);
+  border-radius: 50%;
+  background-color: hsla(256, 72%, 46%, 1);
+  width: 150px;
+  height: 150px;
+  margin: 20px auto;
+}
+
+.score .result h1{
+  padding-top: 35px;
+}
+
+.score p{
+  padding: 20px;
+}
+
+.summary .box{
+  display: flex;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.box p{
+  margin-left: 10px;
+}
+
+.reaction{
+  border: 1px solid hsl(0, 100%, 67%, 0.2);
+  background-color: hsl(0, 100%, 67%, 0.2);
+}
+
+.reaction p{
+  color: hsl(0, 100%, 67%);
+}
+
+.memory{
+  border: 1px solid hsl(39, 100%, 56%, 0.2);
+  background-color: hsl(39, 100%, 56%, 0.2);
+}
+
+.memory p{
+  color: hsl(39, 100%, 56%);
+}
+
+.verbal{
+  border: 1px solid hsl(166, 100%, 37%,0.2);
+  background-color: hsl(166, 100%, 37%, 0.2);
+}
+
+.verbal p{
+  color: hsl(166, 100%, 37%);
+}
+
+.visual{
+  border: 1px solid hsl(234, 85%, 45%,0.2);
+  background-color: hsl(234, 85%, 45%, 0.2);
+}
+
+.visual p{
+  color: hsl(234, 85%, 45%);
+}
+
+.box .result{
+  color: black;
+  margin-left: auto;
+}
+
+button{
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  border-radius: 25px;
+  margin: 20px 0;
+  background-color: hsl(224, 30%, 27%);
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+button:hover{
+  background-color: hsl(234, 85%, 45%);
+}
+
+
+@media only screen and (min-width: 792px){
+  body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container{
+    width: 80%;
+    max-width: 900px;
+    display: flex;
+    gap: 20px;
+    
+  }
+  .score{
+    width: 50%;
+    border-radius: 15px;
+  }
+
+  .summary{
+    width: 50%;
+  }
+}
+
+
+/* .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+} */
